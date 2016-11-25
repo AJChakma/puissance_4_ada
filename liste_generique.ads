@@ -16,6 +16,10 @@ package Liste_Generique is
     type Liste is private;
     type Iterateur is private;
 
+    -- Exceptions levees par ce package
+    Liste_Vide : Exception;
+    Fin_Liste : Exception;
+
     -- Affichage de la liste, dans l'ordre de parcours
     procedure Affiche_Liste (L : in Liste);
 
@@ -43,7 +47,6 @@ package Liste_Generique is
     -- Verifie s'il reste un element a parcourir
     function A_Suivant(It : Iterateur) return Boolean;
 
-    FinDeListe : exception;
 
 private
     type Cellule;
