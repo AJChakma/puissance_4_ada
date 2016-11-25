@@ -55,4 +55,7 @@ private
     type Iterateur_Interne;
     type Iterateur is access Iterateur_Interne;
 
+    -- Test si la liste est Vide
+    function Est_Vide (L : in Liste) return Boolean
+
 end Liste_Generique;
